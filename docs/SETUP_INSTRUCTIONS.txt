@@ -1,0 +1,181 @@
+================================================================================
+                    WARRIOR CHARACTER SETUP INSTRUCTIONS
+================================================================================
+
+Follow these steps to set up your animated Warrior character in Unity!
+
+--------------------------------------------------------------------------------
+STEP 1: SLICE THE SPRITE SHEETS
+--------------------------------------------------------------------------------
+
+For each sprite sheet, do the following:
+
+1. Select the sprite in Project window:
+   Assets/Tiny Swords (Free Pack)/Units/Blue Units/Warrior/
+
+2. In the Inspector, set these import settings:
+   - Texture Type: Sprite (2D and UI)
+   - Sprite Mode: Multiple
+   - Pixels Per Unit: 100 (or adjust to match your game scale)
+   - Filter Mode: Point (no filter) - for crisp pixel art
+   - Compression: None (for best quality)
+
+3. Click "Sprite Editor" button
+
+4. In Sprite Editor, click "Slice" dropdown:
+   - Type: Grid By Cell Count
+   - Set columns based on sprite sheet:
+     * Warrior_Run.png:     6 columns, 1 row
+     * Warrior_Idle.png:    8 columns, 1 row  
+     * Warrior_Attack1.png: 4 columns, 1 row
+     * Warrior_Attack2.png: 4 columns, 1 row
+     * Warrior_Guard.png:   6 columns, 1 row
+   - Click "Slice"
+   - Click "Apply" in top right
+
+--------------------------------------------------------------------------------
+STEP 2: CREATE ANIMATION CLIPS
+--------------------------------------------------------------------------------
+
+1. In Project window, right-click > Create > Folder > Name it "Animations"
+
+2. For each animation, select all sliced sprites of that sheet:
+   - In Project, expand the sprite sheet (click arrow)
+   - Select all child sprites (Ctrl+A or Shift+Click)
+   - Drag them into the Scene view onto your Warrior GameObject
+
+3. Unity will prompt you to save an animation clip:
+   - Warrior_Run sprites    -> Save as "Warrior_Run.anim"
+   - Warrior_Idle sprites   -> Save as "Warrior_Idle.anim"
+   - Warrior_Attack1 sprites -> Save as "Warrior_Attack1.anim"
+   - Warrior_Attack2 sprites -> Save as "Warrior_Attack2.anim"
+   - Warrior_Guard sprites  -> Save as "Warrior_Guard.anim"
+
+4. For each animation clip, select it and in Inspector:
+   - Warrior_Idle: Loop Time = YES
+   - Warrior_Run:  Loop Time = YES
+   - Warrior_Guard: Loop Time = YES
+   - Warrior_Attack1: Loop Time = NO
+   - Warrior_Attack2: Loop Time = NO
+
+--------------------------------------------------------------------------------
+STEP 3: SET UP ANIMATOR CONTROLLER
+--------------------------------------------------------------------------------
+
+1. Unity should have auto-created an Animator Controller when you made animations
+   - If not: Right-click > Create > Animator Controller > Name it "WarriorAnimator"
+
+2. Double-click the Animator Controller to open Animator window
+
+3. Create these Parameters (click + button in Parameters tab):
+   - Bool: "IsRunning"
+   - Bool: "IsGuarding"
+   - Trigger: "Attack1"
+   - Trigger: "Attack2"
+   - Trigger: "Guard"
+
+4. Set up States:
+   - Right-click > Create State > Empty > Name it "Idle"
+   - Drag Warrior_Idle animation into the Motion field
+   - Set as default state (Right-click > Set as Layer Default State)
+   
+   - Create states for: Run, Attack1, Attack2, Guard
+   - Assign corresponding animations to each
+
+5. Create Transitions:
+   
+   Idle -> Run:
+   - Condition: IsRunning = true
+   - Has Exit Time: NO
+   - Transition Duration: 0
+   
+   Run -> Idle:
+   - Condition: IsRunning = false
+   - Has Exit Time: NO
+   - Transition Duration: 0
+   
+   Any State -> Attack1:
+   - Condition: Attack1 (trigger)
+   - Has Exit Time: NO
+   - Transition Duration: 0
+   
+   Attack1 -> Idle:
+   - Has Exit Time: YES
+   - Exit Time: 1.0
+   - Transition Duration: 0
+   
+   Any State -> Attack2:
+   - Condition: Attack2 (trigger)
+   - Has Exit Time: NO
+   - Transition Duration: 0
+   
+   Attack2 -> Idle:
+   - Has Exit Time: YES
+   - Exit Time: 1.0
+   - Transition Duration: 0
+   
+   Any State -> Guard:
+   - Condition: IsGuarding = true
+   - Has Exit Time: NO
+   - Transition Duration: 0
+   
+   Guard -> Idle:
+   - Condition: IsGuarding = false
+   - Has Exit Time: NO
+   - Transition Duration: 0
+
+--------------------------------------------------------------------------------
+STEP 4: SET UP THE SCENE
+--------------------------------------------------------------------------------
+
+1. CREATE CHECKERBOARD BACKGROUND:
+   - GameObject > 2D Object > Sprite > Square
+   - Rename to "Background"
+   - Add Component: CheckerboardBackground (the script we created)
+   - Adjust colors and size in Inspector as desired
+   - Set Position Z to 1 (so it's behind the character)
+
+2. CREATE WARRIOR CHARACTER:
+   - GameObject > Create Empty > Name it "Warrior"
+   - Add Component: Sprite Renderer
+   - Add Component: Animator
+   - Add Component: WarriorController (the script we created)
+   - Assign the Animator Controller to the Animator component
+   
+3. CAMERA SETUP:
+   - Select Main Camera
+   - Set Size to 5-10 (adjust for your preference)
+   - Position at (0, 0, -10)
+
+--------------------------------------------------------------------------------
+STEP 5: CONTROLS
+--------------------------------------------------------------------------------
+
+Once everything is set up, here are the controls:
+
+- RIGHT-CLICK: Click anywhere to move the Warrior to that position
+- LEFT-CLICK: Front hand attack (Attack1)
+- Q KEY: Heavy attack (Attack2)  
+- SPACE or LEFT-SHIFT (HOLD): Guard/Defend
+
+--------------------------------------------------------------------------------
+TROUBLESHOOTING
+--------------------------------------------------------------------------------
+
+Q: Character doesn't move?
+A: Make sure you have a Camera tagged as "MainCamera" in the scene.
+
+Q: Animations don't play?
+A: Check that the Animator Controller is assigned and parameters are named exactly:
+   IsRunning, IsGuarding, Attack1, Attack2, Guard
+
+Q: Sprite looks blurry?
+A: Set Filter Mode to "Point (no filter)" in sprite import settings.
+
+Q: Character faces wrong direction?
+A: The script uses flipX. If your sprites face left by default, you may need
+   to invert the flip logic in the FlipSprite() method.
+
+================================================================================
+                              ENJOY YOUR GAME!
+================================================================================
