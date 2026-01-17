@@ -17,6 +17,51 @@ TextureImporter:
   - first:
       213: 888686281029753222
     second: Bear_Run_4
+  - first:
+      213: -6240776779557325657
+    second: Bear_Run_5
+  - first:
+      213: -7657208841843001052
+    second: Bear_Run_6
+  - first:
+      213: -689485670871524723
+    second: Bear_Run_7
+  - first:
+      213: 8074986353849849290
+    second: Bear_Run_8
+  - first:
+      213: 2713737511834687991
+    second: Bear_Run_9
+  - first:
+      213: -4948783314655592231
+    second: Bear_Run_10
+  - first:
+      213: -7888713319115858259
+    second: Bear_Run_11
+  - first:
+      213: -4227487778024554016
+    second: Bear_Run_12
+  - first:
+      213: 2174499062669415862
+    second: Bear_Run_13
+  - first:
+      213: -6920600412273493452
+    second: Bear_Run_14
+  - first:
+      213: -2068917405827661371
+    second: Bear_Run_15
+  - first:
+      213: 9176233780812888602
+    second: Bear_Run_16
+  - first:
+      213: 5396637942693956461
+    second: Bear_Run_17
+  - first:
+      213: -8771515830131393020
+    second: Bear_Run_18
+  - first:
+      213: -3933025993579757404
+    second: Bear_Run_19
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -580,9 +625,24 @@ TextureImporter:
     nameFileIdTable:
       Bear_Run_0: 447460725055404813
       Bear_Run_1: 6088292996102413675
+      Bear_Run_10: -4948783314655592231
+      Bear_Run_11: -7888713319115858259
+      Bear_Run_12: -4227487778024554016
+      Bear_Run_13: 2174499062669415862
+      Bear_Run_14: -6920600412273493452
+      Bear_Run_15: -2068917405827661371
+      Bear_Run_16: 9176233780812888602
+      Bear_Run_17: 5396637942693956461
+      Bear_Run_18: -8771515830131393020
+      Bear_Run_19: -3933025993579757404
       Bear_Run_2: 7966972464660773352
       Bear_Run_3: 6767145381185255370
       Bear_Run_4: 888686281029753222
+      Bear_Run_5: -6240776779557325657
+      Bear_Run_6: -7657208841843001052
+      Bear_Run_7: -689485670871524723
+      Bear_Run_8: 8074986353849849290
+      Bear_Run_9: 2713737511834687991
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -5,6 +5,15 @@ TextureImporter:
   - first:
       213: -7414083336469400027
     second: Enemy Avatars_03_0
+  - first:
+      213: -2360093870880012068
+    second: Enemy Avatars_03_1
+  - first:
+      213: 3288346824718799901
+    second: Enemy Avatars_03_2
+  - first:
+      213: 4827763956800675978
+    second: Enemy Avatars_03_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -215,6 +224,9 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       Enemy Avatars_03_0: -7414083336469400027
+      Enemy Avatars_03_1: -2360093870880012068
+      Enemy Avatars_03_2: 3288346824718799901
+      Enemy Avatars_03_3: 4827763956800675978
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

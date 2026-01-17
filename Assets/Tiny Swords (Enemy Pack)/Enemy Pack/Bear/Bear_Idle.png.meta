@@ -26,6 +26,78 @@ TextureImporter:
   - first:
       213: 1971444567067864996
     second: Bear_Idle_7
+  - first:
+      213: 3972371356389836191
+    second: Bear_Idle_8
+  - first:
+      213: -5802924426474884535
+    second: Bear_Idle_9
+  - first:
+      213: 9177866396907168727
+    second: Bear_Idle_10
+  - first:
+      213: -5392572963471199584
+    second: Bear_Idle_11
+  - first:
+      213: -708880073471245909
+    second: Bear_Idle_12
+  - first:
+      213: -8320007561744405846
+    second: Bear_Idle_13
+  - first:
+      213: 6798941208263455841
+    second: Bear_Idle_14
+  - first:
+      213: -7142109308877031983
+    second: Bear_Idle_15
+  - first:
+      213: 9214392763333849411
+    second: Bear_Idle_16
+  - first:
+      213: -4971307714100189544
+    second: Bear_Idle_17
+  - first:
+      213: 639683785987226497
+    second: Bear_Idle_18
+  - first:
+      213: -6269275634622759985
+    second: Bear_Idle_19
+  - first:
+      213: -5783462093634930076
+    second: Bear_Idle_20
+  - first:
+      213: -5267910179657004485
+    second: Bear_Idle_21
+  - first:
+      213: -3602076095423926540
+    second: Bear_Idle_22
+  - first:
+      213: 3966206081195514614
+    second: Bear_Idle_23
+  - first:
+      213: -1541036689528424409
+    second: Bear_Idle_24
+  - first:
+      213: 7081371498459054552
+    second: Bear_Idle_25
+  - first:
+      213: 7289357606406587412
+    second: Bear_Idle_26
+  - first:
+      213: -442121384828512449
+    second: Bear_Idle_27
+  - first:
+      213: 1002761625028332140
+    second: Bear_Idle_28
+  - first:
+      213: 5059705681854234614
+    second: Bear_Idle_29
+  - first:
+      213: 513966220136347856
+    second: Bear_Idle_30
+  - first:
+      213: 8366882585053607310
+    second: Bear_Idle_31
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -853,12 +925,36 @@ TextureImporter:
     nameFileIdTable:
       Bear_Idle_0: 6337399714680752440
       Bear_Idle_1: -4826193806258101397
+      Bear_Idle_10: 9177866396907168727
+      Bear_Idle_11: -5392572963471199584
+      Bear_Idle_12: -708880073471245909
+      Bear_Idle_13: -8320007561744405846
+      Bear_Idle_14: 6798941208263455841
+      Bear_Idle_15: -7142109308877031983
+      Bear_Idle_16: 9214392763333849411
+      Bear_Idle_17: -4971307714100189544
+      Bear_Idle_18: 639683785987226497
+      Bear_Idle_19: -6269275634622759985
       Bear_Idle_2: 3192812346824841207
+      Bear_Idle_20: -5783462093634930076
+      Bear_Idle_21: -5267910179657004485
+      Bear_Idle_22: -3602076095423926540
+      Bear_Idle_23: 3966206081195514614
+      Bear_Idle_24: -1541036689528424409
+      Bear_Idle_25: 7081371498459054552
+      Bear_Idle_26: 7289357606406587412
+      Bear_Idle_27: -442121384828512449
+      Bear_Idle_28: 1002761625028332140
+      Bear_Idle_29: 5059705681854234614
       Bear_Idle_3: -2491311529736965540
+      Bear_Idle_30: 513966220136347856
+      Bear_Idle_31: 8366882585053607310
       Bear_Idle_4: 6058804851987151523
       Bear_Idle_5: -3742161062813182624
       Bear_Idle_6: -5604200028169735645
       Bear_Idle_7: 1971444567067864996
+      Bear_Idle_8: 3972371356389836191
+      Bear_Idle_9: -5802924426474884535
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

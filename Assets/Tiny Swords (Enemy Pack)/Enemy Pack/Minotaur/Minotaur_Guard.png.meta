@@ -35,6 +35,69 @@ TextureImporter:
   - first:
       213: 7151108387192988659
     second: Minotaur_Guard_10
+  - first:
+      213: -7624997180572110209
+    second: Minotaur_Guard_11
+  - first:
+      213: -8983917399042996319
+    second: Minotaur_Guard_12
+  - first:
+      213: -3681256993949196090
+    second: Minotaur_Guard_13
+  - first:
+      213: -2883654936379713449
+    second: Minotaur_Guard_14
+  - first:
+      213: -4130122337764711847
+    second: Minotaur_Guard_15
+  - first:
+      213: 7154943230993536587
+    second: Minotaur_Guard_16
+  - first:
+      213: -1489629444936041713
+    second: Minotaur_Guard_17
+  - first:
+      213: 4830952715949227627
+    second: Minotaur_Guard_18
+  - first:
+      213: 8747893242708389360
+    second: Minotaur_Guard_19
+  - first:
+      213: 3365245829315695417
+    second: Minotaur_Guard_20
+  - first:
+      213: -7585304343258054400
+    second: Minotaur_Guard_21
+  - first:
+      213: 567219144433674308
+    second: Minotaur_Guard_22
+  - first:
+      213: 7071804965379293925
+    second: Minotaur_Guard_23
+  - first:
+      213: -7017364699954188188
+    second: Minotaur_Guard_24
+  - first:
+      213: 7485045918297485095
+    second: Minotaur_Guard_25
+  - first:
+      213: -5569525800407002247
+    second: Minotaur_Guard_26
+  - first:
+      213: 8113194882076661406
+    second: Minotaur_Guard_27
+  - first:
+      213: 8918225735990541485
+    second: Minotaur_Guard_28
+  - first:
+      213: -2512601758685286740
+    second: Minotaur_Guard_29
+  - first:
+      213: -7637118570320738756
+    second: Minotaur_Guard_30
+  - first:
+      213: 2073523690972462844
+    second: Minotaur_Guard_31
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -863,8 +926,29 @@ TextureImporter:
       Minotaur_Guard_0: 1782860331577667975
       Minotaur_Guard_1: 3319984445015700558
       Minotaur_Guard_10: 7151108387192988659
+      Minotaur_Guard_11: -7624997180572110209
+      Minotaur_Guard_12: -8983917399042996319
+      Minotaur_Guard_13: -3681256993949196090
+      Minotaur_Guard_14: -2883654936379713449
+      Minotaur_Guard_15: -4130122337764711847
+      Minotaur_Guard_16: 7154943230993536587
+      Minotaur_Guard_17: -1489629444936041713
+      Minotaur_Guard_18: 4830952715949227627
+      Minotaur_Guard_19: 8747893242708389360
       Minotaur_Guard_2: -3836846384943393274
+      Minotaur_Guard_20: 3365245829315695417
+      Minotaur_Guard_21: -7585304343258054400
+      Minotaur_Guard_22: 567219144433674308
+      Minotaur_Guard_23: 7071804965379293925
+      Minotaur_Guard_24: -7017364699954188188
+      Minotaur_Guard_25: 7485045918297485095
+      Minotaur_Guard_26: -5569525800407002247
+      Minotaur_Guard_27: 8113194882076661406
+      Minotaur_Guard_28: 8918225735990541485
+      Minotaur_Guard_29: -2512601758685286740
       Minotaur_Guard_3: -9132669109250678921
+      Minotaur_Guard_30: -7637118570320738756
+      Minotaur_Guard_31: 2073523690972462844
       Minotaur_Guard_4: 753921178762626291
       Minotaur_Guard_5: 8899844926822369905
       Minotaur_Guard_6: -5676361975811264155

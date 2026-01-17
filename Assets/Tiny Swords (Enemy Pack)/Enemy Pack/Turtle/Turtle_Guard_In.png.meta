@@ -23,6 +23,135 @@ TextureImporter:
   - first:
       213: -8855256134687364786
     second: Turtle_Guard_In_6
+  - first:
+      213: 2602930647346597711
+    second: Turtle_Guard_In_7
+  - first:
+      213: 8938086726599168666
+    second: Turtle_Guard_In_8
+  - first:
+      213: -3757421905151827831
+    second: Turtle_Guard_In_9
+  - first:
+      213: -6210036204851417101
+    second: Turtle_Guard_In_10
+  - first:
+      213: 3791096452392345204
+    second: Turtle_Guard_In_11
+  - first:
+      213: 4834905373231882632
+    second: Turtle_Guard_In_12
+  - first:
+      213: 1298160316455639966
+    second: Turtle_Guard_In_13
+  - first:
+      213: -3687146722555996779
+    second: Turtle_Guard_In_14
+  - first:
+      213: -1018090135341594402
+    second: Turtle_Guard_In_15
+  - first:
+      213: 4491487757149433336
+    second: Turtle_Guard_In_16
+  - first:
+      213: -2192461356996766394
+    second: Turtle_Guard_In_17
+  - first:
+      213: -2530436143483624387
+    second: Turtle_Guard_In_18
+  - first:
+      213: -54273348912805580
+    second: Turtle_Guard_In_19
+  - first:
+      213: -6264076953097901607
+    second: Turtle_Guard_In_20
+  - first:
+      213: -7592017387530439720
+    second: Turtle_Guard_In_21
+  - first:
+      213: 3309823049201461463
+    second: Turtle_Guard_In_22
+  - first:
+      213: -8824922789829641603
+    second: Turtle_Guard_In_23
+  - first:
+      213: -8406890931502185373
+    second: Turtle_Guard_In_24
+  - first:
+      213: -8368732202601952426
+    second: Turtle_Guard_In_25
+  - first:
+      213: -7639324635064790620
+    second: Turtle_Guard_In_26
+  - first:
+      213: -1677189132485919439
+    second: Turtle_Guard_In_27
+  - first:
+      213: 9116663452779088854
+    second: Turtle_Guard_In_28
+  - first:
+      213: -6844861228127690666
+    second: Turtle_Guard_In_29
+  - first:
+      213: 3984531305735995672
+    second: Turtle_Guard_In_30
+  - first:
+      213: 1256139344336886258
+    second: Turtle_Guard_In_31
+  - first:
+      213: -925022088152376952
+    second: Turtle_Guard_In_32
+  - first:
+      213: 8850792254978839763
+    second: Turtle_Guard_In_33
+  - first:
+      213: 1528483535834611980
+    second: Turtle_Guard_In_34
+  - first:
+      213: -6722160858313315216
+    second: Turtle_Guard_In_35
+  - first:
+      213: 7777695657744019527
+    second: Turtle_Guard_In_36
+  - first:
+      213: 229901646591265409
+    second: Turtle_Guard_In_37
+  - first:
+      213: 8485805588175128711
+    second: Turtle_Guard_In_38
+  - first:
+      213: 8916020434424056194
+    second: Turtle_Guard_In_39
+  - first:
+      213: 4058495965203704046
+    second: Turtle_Guard_In_40
+  - first:
+      213: 8531706982258458424
+    second: Turtle_Guard_In_41
+  - first:
+      213: 8569024448023913974
+    second: Turtle_Guard_In_42
+  - first:
+      213: -3834571934277430069
+    second: Turtle_Guard_In_43
+  - first:
+      213: -1519141613118550503
+    second: Turtle_Guard_In_44
+  - first:
+      213: 7686231557201387264
+    second: Turtle_Guard_In_45
+  - first:
+      213: -1118363633837703208
+    second: Turtle_Guard_In_46
+  - first:
+      213: -5219940182842796886
+    second: Turtle_Guard_In_47
+  - first:
+      213: -8574562726059772591
+    second: Turtle_Guard_In_48
+  - first:
+      213: -3767510186418206003
+    second: Turtle_Guard_In_49
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -1246,11 +1375,54 @@ TextureImporter:
     nameFileIdTable:
       Turtle_Guard_In_0: -7175382299193244127
       Turtle_Guard_In_1: 7298396252159053124
+      Turtle_Guard_In_10: -6210036204851417101
+      Turtle_Guard_In_11: 3791096452392345204
+      Turtle_Guard_In_12: 4834905373231882632
+      Turtle_Guard_In_13: 1298160316455639966
+      Turtle_Guard_In_14: -3687146722555996779
+      Turtle_Guard_In_15: -1018090135341594402
+      Turtle_Guard_In_16: 4491487757149433336
+      Turtle_Guard_In_17: -2192461356996766394
+      Turtle_Guard_In_18: -2530436143483624387
+      Turtle_Guard_In_19: -54273348912805580
       Turtle_Guard_In_2: 6678901975303812583
+      Turtle_Guard_In_20: -6264076953097901607
+      Turtle_Guard_In_21: -7592017387530439720
+      Turtle_Guard_In_22: 3309823049201461463
+      Turtle_Guard_In_23: -8824922789829641603
+      Turtle_Guard_In_24: -8406890931502185373
+      Turtle_Guard_In_25: -8368732202601952426
+      Turtle_Guard_In_26: -7639324635064790620
+      Turtle_Guard_In_27: -1677189132485919439
+      Turtle_Guard_In_28: 9116663452779088854
+      Turtle_Guard_In_29: -6844861228127690666
       Turtle_Guard_In_3: 463892349402099179
+      Turtle_Guard_In_30: 3984531305735995672
+      Turtle_Guard_In_31: 1256139344336886258
+      Turtle_Guard_In_32: -925022088152376952
+      Turtle_Guard_In_33: 8850792254978839763
+      Turtle_Guard_In_34: 1528483535834611980
+      Turtle_Guard_In_35: -6722160858313315216
+      Turtle_Guard_In_36: 7777695657744019527
+      Turtle_Guard_In_37: 229901646591265409
+      Turtle_Guard_In_38: 8485805588175128711
+      Turtle_Guard_In_39: 8916020434424056194
       Turtle_Guard_In_4: 6386175343137009580
+      Turtle_Guard_In_40: 4058495965203704046
+      Turtle_Guard_In_41: 8531706982258458424
+      Turtle_Guard_In_42: 8569024448023913974
+      Turtle_Guard_In_43: -3834571934277430069
+      Turtle_Guard_In_44: -1519141613118550503
+      Turtle_Guard_In_45: 7686231557201387264
+      Turtle_Guard_In_46: -1118363633837703208
+      Turtle_Guard_In_47: -5219940182842796886
+      Turtle_Guard_In_48: -8574562726059772591
+      Turtle_Guard_In_49: -3767510186418206003
       Turtle_Guard_In_5: 4996188150437600461
       Turtle_Guard_In_6: -8855256134687364786
+      Turtle_Guard_In_7: 2602930647346597711
+      Turtle_Guard_In_8: 8938086726599168666
+      Turtle_Guard_In_9: -3757421905151827831
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

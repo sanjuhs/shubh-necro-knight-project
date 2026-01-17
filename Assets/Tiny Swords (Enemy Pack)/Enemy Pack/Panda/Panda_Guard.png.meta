@@ -26,6 +26,78 @@ TextureImporter:
   - first:
       213: -9195090055672219468
     second: Panda_Guard_7
+  - first:
+      213: 5739398440827319471
+    second: Panda_Guard_8
+  - first:
+      213: -5500545555519167415
+    second: Panda_Guard_9
+  - first:
+      213: -2063858286996957134
+    second: Panda_Guard_10
+  - first:
+      213: 6297484207865016838
+    second: Panda_Guard_11
+  - first:
+      213: -9074451649945146224
+    second: Panda_Guard_12
+  - first:
+      213: 1309512519963353225
+    second: Panda_Guard_13
+  - first:
+      213: -3234359919589294273
+    second: Panda_Guard_14
+  - first:
+      213: 6265771142721002596
+    second: Panda_Guard_15
+  - first:
+      213: 5579709104306220543
+    second: Panda_Guard_16
+  - first:
+      213: -5448653561036121271
+    second: Panda_Guard_17
+  - first:
+      213: -5839149395887827520
+    second: Panda_Guard_18
+  - first:
+      213: 7385903681364342406
+    second: Panda_Guard_19
+  - first:
+      213: 3830749209481486890
+    second: Panda_Guard_20
+  - first:
+      213: -8971849593971906677
+    second: Panda_Guard_21
+  - first:
+      213: -7745194203941681594
+    second: Panda_Guard_22
+  - first:
+      213: 4904916757008418177
+    second: Panda_Guard_23
+  - first:
+      213: -5985689081926181398
+    second: Panda_Guard_24
+  - first:
+      213: 1800281201607099560
+    second: Panda_Guard_25
+  - first:
+      213: 1631271892741107647
+    second: Panda_Guard_26
+  - first:
+      213: -1069750127097503609
+    second: Panda_Guard_27
+  - first:
+      213: -4572896955064378451
+    second: Panda_Guard_28
+  - first:
+      213: -8185909124636838813
+    second: Panda_Guard_29
+  - first:
+      213: 4491456450897418470
+    second: Panda_Guard_30
+  - first:
+      213: 5401064664186448613
+    second: Panda_Guard_31
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -853,12 +925,36 @@ TextureImporter:
     nameFileIdTable:
       Panda_Guard_0: 705313493255903276
       Panda_Guard_1: -5484762364150237930
+      Panda_Guard_10: -2063858286996957134
+      Panda_Guard_11: 6297484207865016838
+      Panda_Guard_12: -9074451649945146224
+      Panda_Guard_13: 1309512519963353225
+      Panda_Guard_14: -3234359919589294273
+      Panda_Guard_15: 6265771142721002596
+      Panda_Guard_16: 5579709104306220543
+      Panda_Guard_17: -5448653561036121271
+      Panda_Guard_18: -5839149395887827520
+      Panda_Guard_19: 7385903681364342406
       Panda_Guard_2: -6531111519030440495
+      Panda_Guard_20: 3830749209481486890
+      Panda_Guard_21: -8971849593971906677
+      Panda_Guard_22: -7745194203941681594
+      Panda_Guard_23: 4904916757008418177
+      Panda_Guard_24: -5985689081926181398
+      Panda_Guard_25: 1800281201607099560
+      Panda_Guard_26: 1631271892741107647
+      Panda_Guard_27: -1069750127097503609
+      Panda_Guard_28: -4572896955064378451
+      Panda_Guard_29: -8185909124636838813
       Panda_Guard_3: -6466830614042878624
+      Panda_Guard_30: 4491456450897418470
+      Panda_Guard_31: 5401064664186448613
       Panda_Guard_4: 486465565473278699
       Panda_Guard_5: -1429718893904834417
       Panda_Guard_6: -5779032775031153440
       Panda_Guard_7: -9195090055672219468
+      Panda_Guard_8: 5739398440827319471
+      Panda_Guard_9: -5500545555519167415
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -47,6 +47,57 @@ TextureImporter:
   - first:
       213: -2608302267379092823
     second: Lancer_Attack_14
+  - first:
+      213: 1532000279480388612
+    second: Lancer_Attack_15
+  - first:
+      213: 859742000947791227
+    second: Lancer_Attack_16
+  - first:
+      213: 4260943557012872147
+    second: Lancer_Attack_17
+  - first:
+      213: -8100867400811706215
+    second: Lancer_Attack_18
+  - first:
+      213: -5500774777689852051
+    second: Lancer_Attack_19
+  - first:
+      213: -5498990782322519630
+    second: Lancer_Attack_20
+  - first:
+      213: -6783469053792939432
+    second: Lancer_Attack_21
+  - first:
+      213: 6751921681970249954
+    second: Lancer_Attack_22
+  - first:
+      213: 5996599604844044500
+    second: Lancer_Attack_23
+  - first:
+      213: -4834058791463581147
+    second: Lancer_Attack_24
+  - first:
+      213: -5643458378326331187
+    second: Lancer_Attack_25
+  - first:
+      213: 2995002057461026143
+    second: Lancer_Attack_26
+  - first:
+      213: 8239840165862226081
+    second: Lancer_Attack_27
+  - first:
+      213: -3599186962586774052
+    second: Lancer_Attack_28
+  - first:
+      213: 4345379945518656586
+    second: Lancer_Attack_29
+  - first:
+      213: -577211507868916537
+    second: Lancer_Attack_30
+  - first:
+      213: 5429966990036606337
+    second: Lancer_Attack_31
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -879,8 +930,25 @@ TextureImporter:
       Lancer_Attack_12: -595104100363766968
       Lancer_Attack_13: -7315085949056498102
       Lancer_Attack_14: -2608302267379092823
+      Lancer_Attack_15: 1532000279480388612
+      Lancer_Attack_16: 859742000947791227
+      Lancer_Attack_17: 4260943557012872147
+      Lancer_Attack_18: -8100867400811706215
+      Lancer_Attack_19: -5500774777689852051
       Lancer_Attack_2: 1057887045403753893
+      Lancer_Attack_20: -5498990782322519630
+      Lancer_Attack_21: -6783469053792939432
+      Lancer_Attack_22: 6751921681970249954
+      Lancer_Attack_23: 5996599604844044500
+      Lancer_Attack_24: -4834058791463581147
+      Lancer_Attack_25: -5643458378326331187
+      Lancer_Attack_26: 2995002057461026143
+      Lancer_Attack_27: 8239840165862226081
+      Lancer_Attack_28: -3599186962586774052
+      Lancer_Attack_29: 4345379945518656586
       Lancer_Attack_3: 9171189906917871255
+      Lancer_Attack_30: -577211507868916537
+      Lancer_Attack_31: 5429966990036606337
       Lancer_Attack_4: -7591055392064068260
       Lancer_Attack_5: -6665944773161231278
       Lancer_Attack_6: 8520313037693922510

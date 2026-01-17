@@ -5,6 +5,15 @@ TextureImporter:
   - first:
       213: 2382908340504850858
     second: Harpoon_0
+  - first:
+      213: 265050883009070605
+    second: Harpoon_1
+  - first:
+      213: 1320953492869387932
+    second: Harpoon_2
+  - first:
+      213: -303998827136990905
+    second: Harpoon_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -215,6 +224,9 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       Harpoon_0: 2382908340504850858
+      Harpoon_1: 265050883009070605
+      Harpoon_2: 1320953492869387932
+      Harpoon_3: -303998827136990905
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

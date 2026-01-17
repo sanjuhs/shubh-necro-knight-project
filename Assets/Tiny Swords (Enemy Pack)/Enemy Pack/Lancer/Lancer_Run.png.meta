@@ -20,6 +20,60 @@ TextureImporter:
   - first:
       213: -1776823346852784203
     second: Lancer_Run_5
+  - first:
+      213: -5045413095195442503
+    second: Lancer_Run_6
+  - first:
+      213: -7371820071227690844
+    second: Lancer_Run_7
+  - first:
+      213: 5708977259768133197
+    second: Lancer_Run_8
+  - first:
+      213: 4177770686383055822
+    second: Lancer_Run_9
+  - first:
+      213: 4982878038405536832
+    second: Lancer_Run_10
+  - first:
+      213: 6340990970288002852
+    second: Lancer_Run_11
+  - first:
+      213: -2500822763924461573
+    second: Lancer_Run_12
+  - first:
+      213: 8120985990750204635
+    second: Lancer_Run_13
+  - first:
+      213: 5339033163239959367
+    second: Lancer_Run_14
+  - first:
+      213: -3511240074802575396
+    second: Lancer_Run_15
+  - first:
+      213: 2233085458802500616
+    second: Lancer_Run_16
+  - first:
+      213: -5164834167721996324
+    second: Lancer_Run_17
+  - first:
+      213: 6285658550680014955
+    second: Lancer_Run_18
+  - first:
+      213: -5018821524195883665
+    second: Lancer_Run_19
+  - first:
+      213: -1950035257761278127
+    second: Lancer_Run_20
+  - first:
+      213: -2677034900098731991
+    second: Lancer_Run_21
+  - first:
+      213: 1208603132453520623
+    second: Lancer_Run_22
+  - first:
+      213: 8312826847834254531
+    second: Lancer_Run_23
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -671,10 +725,28 @@ TextureImporter:
     nameFileIdTable:
       Lancer_Run_0: -8580444238127179786
       Lancer_Run_1: 828278362111410375
+      Lancer_Run_10: 4982878038405536832
+      Lancer_Run_11: 6340990970288002852
+      Lancer_Run_12: -2500822763924461573
+      Lancer_Run_13: 8120985990750204635
+      Lancer_Run_14: 5339033163239959367
+      Lancer_Run_15: -3511240074802575396
+      Lancer_Run_16: 2233085458802500616
+      Lancer_Run_17: -5164834167721996324
+      Lancer_Run_18: 6285658550680014955
+      Lancer_Run_19: -5018821524195883665
       Lancer_Run_2: -4153816518293905039
+      Lancer_Run_20: -1950035257761278127
+      Lancer_Run_21: -2677034900098731991
+      Lancer_Run_22: 1208603132453520623
+      Lancer_Run_23: 8312826847834254531
       Lancer_Run_3: 1456675321045083290
       Lancer_Run_4: -3942745417268178275
       Lancer_Run_5: -1776823346852784203
+      Lancer_Run_6: -5045413095195442503
+      Lancer_Run_7: -7371820071227690844
+      Lancer_Run_8: 5708977259768133197
+      Lancer_Run_9: 4177770686383055822
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

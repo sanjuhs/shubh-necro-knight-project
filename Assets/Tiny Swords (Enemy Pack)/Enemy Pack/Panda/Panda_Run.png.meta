@@ -23,6 +23,57 @@ TextureImporter:
   - first:
       213: 3108237486470056095
     second: Panda_Run_6
+  - first:
+      213: -3980889229803947567
+    second: Panda_Run_7
+  - first:
+      213: 3126027382989005082
+    second: Panda_Run_8
+  - first:
+      213: 225754359430048074
+    second: Panda_Run_9
+  - first:
+      213: 433027570074379416
+    second: Panda_Run_10
+  - first:
+      213: 3224465921103852754
+    second: Panda_Run_11
+  - first:
+      213: 6914406226999490809
+    second: Panda_Run_12
+  - first:
+      213: -1626018834104349421
+    second: Panda_Run_13
+  - first:
+      213: -4612277500558276638
+    second: Panda_Run_14
+  - first:
+      213: -790440704515145657
+    second: Panda_Run_15
+  - first:
+      213: 4084105505519640065
+    second: Panda_Run_16
+  - first:
+      213: -5615372909457299418
+    second: Panda_Run_17
+  - first:
+      213: -1070006622134583762
+    second: Panda_Run_18
+  - first:
+      213: 8642752346031812947
+    second: Panda_Run_19
+  - first:
+      213: -2689991661154856166
+    second: Panda_Run_20
+  - first:
+      213: 9181769917514777586
+    second: Panda_Run_21
+  - first:
+      213: -8374101424750742301
+    second: Panda_Run_22
+  - first:
+      213: 5142538449550979458
+    second: Panda_Run_23
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -674,11 +725,28 @@ TextureImporter:
     nameFileIdTable:
       Panda_Run_0: -8814424347361672124
       Panda_Run_1: -8836532904105383544
+      Panda_Run_10: 433027570074379416
+      Panda_Run_11: 3224465921103852754
+      Panda_Run_12: 6914406226999490809
+      Panda_Run_13: -1626018834104349421
+      Panda_Run_14: -4612277500558276638
+      Panda_Run_15: -790440704515145657
+      Panda_Run_16: 4084105505519640065
+      Panda_Run_17: -5615372909457299418
+      Panda_Run_18: -1070006622134583762
+      Panda_Run_19: 8642752346031812947
       Panda_Run_2: -8850384218036740950
+      Panda_Run_20: -2689991661154856166
+      Panda_Run_21: 9181769917514777586
+      Panda_Run_22: -8374101424750742301
+      Panda_Run_23: 5142538449550979458
       Panda_Run_3: -4422099591060308844
       Panda_Run_4: -8315347680731458982
       Panda_Run_5: -9062487706820149092
       Panda_Run_6: 3108237486470056095
+      Panda_Run_7: -3980889229803947567
+      Panda_Run_8: 3126027382989005082
+      Panda_Run_9: 225754359430048074
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

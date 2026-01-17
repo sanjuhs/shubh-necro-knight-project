@@ -1,15 +1,15 @@
 using UnityEngine;
 
 /// <summary>
-/// Automatically syncs camera bounds with a CheckerboardBackground or any SpriteRenderer.
+/// Automatically syncs camera bounds with a WorldGenerator (Tilemap) or any SpriteRenderer.
 /// Attach this to the Main Camera alongside CameraFollow.
 /// </summary>
 [RequireComponent(typeof(CameraFollow))]
 public class CameraBoundsFromBackground : MonoBehaviour
 {
     [Header("Background Reference")]
-    [Tooltip("The CheckerboardBackground to sync bounds from. If not set, will auto-find.")]
-    [SerializeField] private CheckerboardBackground checkerboardBackground;
+    [Tooltip("The WorldGenerator to sync bounds from. If not set, will auto-find.")]
+    [SerializeField] private WorldGenerator worldGenerator;
     
     [Tooltip("Alternative: Use any SpriteRenderer as the boundary source")]
     [SerializeField] private SpriteRenderer backgroundSpriteRenderer;
@@ -30,16 +30,18 @@ public class CameraBoundsFromBackground : MonoBehaviour
     
     // Cached reference
     private CameraFollow cameraFollow;
+    private Camera cam;
     
     private void Awake()
     {
         cameraFollow = GetComponent<CameraFollow>();
+        cam = GetComponent<Camera>();
     }
     
     private void Start()
     {
         // Auto-find background if not assigned
-        if (checkerboardBackground == null && backgroundSpriteRenderer == null)
+        if (worldGenerator == null && backgroundSpriteRenderer == null)
         {
             FindBackground();
         }
@@ -61,17 +63,17 @@ public class CameraBoundsFromBackground : MonoBehaviour
     }
     
     /// <summary>
-    /// Attempts to find a CheckerboardBackground or Background SpriteRenderer in the scene.
+    /// Attempts to find a WorldGenerator or Background SpriteRenderer in the scene.
     /// </summary>
     private void FindBackground()
     {
-        // First, try to find CheckerboardBackground
-        checkerboardBackground = FindFirstObjectByType<CheckerboardBackground>();
+        // First, try to find WorldGenerator
+        worldGenerator = FindFirstObjectByType<WorldGenerator>();
         
-        if (checkerboardBackground != null)
+        if (worldGenerator != null)
         {
             if (debugLog)
-                Debug.Log($"[CameraBoundsFromBackground] Auto-found CheckerboardBackground: {checkerboardBackground.gameObject.name}");
+                Debug.Log($"[CameraBoundsFromBackground] Auto-found WorldGenerator: {worldGenerator.gameObject.name}");
             return;
         }
         
@@ -79,11 +81,11 @@ public class CameraBoundsFromBackground : MonoBehaviour
         GameObject bgObject = GameObject.Find("Background");
         if (bgObject != null)
         {
-            checkerboardBackground = bgObject.GetComponent<CheckerboardBackground>();
-            if (checkerboardBackground != null)
+            worldGenerator = bgObject.GetComponent<WorldGenerator>();
+            if (worldGenerator != null)
             {
                 if (debugLog)
-                    Debug.Log("[CameraBoundsFromBackground] Found CheckerboardBackground on 'Background' object");
+                    Debug.Log("[CameraBoundsFromBackground] Found WorldGenerator on 'Background' object");
                 return;
             }
             
@@ -118,7 +120,7 @@ public class CameraBoundsFromBackground : MonoBehaviour
             Debug.Log($"[CameraBoundsFromBackground] Auto-found largest SpriteRenderer as background: {backgroundSpriteRenderer.gameObject.name}");
         }
         
-        if (checkerboardBackground == null && backgroundSpriteRenderer == null)
+        if (worldGenerator == null && backgroundSpriteRenderer == null)
         {
             Debug.LogWarning("[CameraBoundsFromBackground] Could not find any background! Please assign one manually.");
         }
@@ -143,14 +145,14 @@ public class CameraBoundsFromBackground : MonoBehaviour
         
         float minX, maxX, minY, maxY;
         
-        // Get bounds from CheckerboardBackground (preferred)
-        if (checkerboardBackground != null)
+        // Get bounds from WorldGenerator (preferred)
+        if (worldGenerator != null)
         {
-            checkerboardBackground.GetBoundaryCoordinates(out minX, out maxX, out minY, out maxY);
+            worldGenerator.GetBoundaryCoordinates(out minX, out maxX, out minY, out maxY);
             
             if (debugLog && !continuousSync)
             {
-                Debug.Log($"[CameraBoundsFromBackground] Synced from CheckerboardBackground: " +
+                Debug.Log($"[CameraBoundsFromBackground] Synced from WorldGenerator: " +
                          $"X({minX:F1} to {maxX:F1}), Y({minY:F1} to {maxY:F1})");
             }
         }
@@ -182,16 +184,64 @@ public class CameraBoundsFromBackground : MonoBehaviour
         minY += boundaryPadding;
         maxY -= boundaryPadding;
         
-        // Apply to CameraFollow
-        cameraFollow.SetBoundaries(minX, maxX, minY, maxY);
+        // Calculate background size
+        float backgroundWidth = maxX - minX;
+        float backgroundHeight = maxY - minY;
+        
+        // Calculate camera size
+        float cameraWidth = 0f;
+        float cameraHeight = 0f;
+        
+        if (cam != null && cam.orthographic)
+        {
+            cameraHeight = cam.orthographicSize * 2f;
+            cameraWidth = cameraHeight * cam.aspect;
+        }
+        else
+        {
+            // If camera is not orthographic, we can't determine size, so use normal behavior
+            cameraFollow.SetBoundaries(minX, maxX, minY, maxY);
+            return;
+        }
+        
+        // Check if background is smaller than camera on any axis
+        if (backgroundWidth < cameraWidth || backgroundHeight < cameraHeight)
+        {
+            // Background is smaller than camera - center camera and disable movement
+            float centerX = (minX + maxX) / 2f;
+            float centerY = (minY + maxY) / 2f;
+            Vector3 centerPosition = new Vector3(centerX, centerY, transform.position.z);
+            
+            // Disable boundaries and following to stop camera movement
+            cameraFollow.SetUseBoundaries(false);
+            cameraFollow.SetEnableFollowing(false);
+            
+            // Center the camera at the background center
+            cameraFollow.CenterAtPosition(centerPosition);
+            
+            if (debugLog && !continuousSync)
+            {
+                Debug.Log($"[CameraBoundsFromBackground] Background is smaller than camera. " +
+                         $"Background: {backgroundWidth:F1}x{backgroundHeight:F1}, " +
+                         $"Camera: {cameraWidth:F1}x{cameraHeight:F1}. " +
+                         $"Camera centered at ({centerX:F1}, {centerY:F1})");
+            }
+        }
+        else
+        {
+            // Background is larger than camera - use normal boundary behavior
+            cameraFollow.SetUseBoundaries(true);
+            cameraFollow.SetEnableFollowing(true);
+            cameraFollow.SetBoundaries(minX, maxX, minY, maxY);
+        }
     }
     
     /// <summary>
-    /// Sets a new CheckerboardBackground and syncs bounds.
+    /// Sets a new WorldGenerator and syncs bounds.
     /// </summary>
-    public void SetBackground(CheckerboardBackground newBackground)
+    public void SetBackground(WorldGenerator newBackground)
     {
-        checkerboardBackground = newBackground;
+        worldGenerator = newBackground;
         backgroundSpriteRenderer = null;
         SyncBounds();
     }
@@ -201,7 +251,7 @@ public class CameraBoundsFromBackground : MonoBehaviour
     /// </summary>
     public void SetBackground(SpriteRenderer newBackground)
     {
-        checkerboardBackground = null;
+        worldGenerator = null;
         backgroundSpriteRenderer = newBackground;
         SyncBounds();
     }

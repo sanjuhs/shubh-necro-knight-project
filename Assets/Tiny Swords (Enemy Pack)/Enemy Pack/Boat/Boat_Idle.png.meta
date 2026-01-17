@@ -26,6 +26,78 @@ TextureImporter:
   - first:
       213: 726911693686558231
     second: Boat_Idle_7
+  - first:
+      213: -7762335449730396998
+    second: Boat_Idle_8
+  - first:
+      213: 4154621352062557506
+    second: Boat_Idle_9
+  - first:
+      213: -3547396288015076898
+    second: Boat_Idle_10
+  - first:
+      213: -7247449387605456708
+    second: Boat_Idle_11
+  - first:
+      213: 4402510375628040379
+    second: Boat_Idle_12
+  - first:
+      213: -2289544782470736487
+    second: Boat_Idle_13
+  - first:
+      213: -4151748312392957543
+    second: Boat_Idle_14
+  - first:
+      213: 1409060792504754377
+    second: Boat_Idle_15
+  - first:
+      213: 1974090480238873110
+    second: Boat_Idle_16
+  - first:
+      213: 9046063816981014853
+    second: Boat_Idle_17
+  - first:
+      213: 8373007730682731621
+    second: Boat_Idle_18
+  - first:
+      213: -6659054194220710536
+    second: Boat_Idle_19
+  - first:
+      213: 4887726276583268955
+    second: Boat_Idle_20
+  - first:
+      213: -8942628761697340931
+    second: Boat_Idle_21
+  - first:
+      213: 4997084191622657167
+    second: Boat_Idle_22
+  - first:
+      213: 2781536751819389495
+    second: Boat_Idle_23
+  - first:
+      213: 5154917581124348552
+    second: Boat_Idle_24
+  - first:
+      213: -3482197652663110358
+    second: Boat_Idle_25
+  - first:
+      213: -962024618335019262
+    second: Boat_Idle_26
+  - first:
+      213: -5151045836208967112
+    second: Boat_Idle_27
+  - first:
+      213: 114561295040324998
+    second: Boat_Idle_28
+  - first:
+      213: 8499750460068527976
+    second: Boat_Idle_29
+  - first:
+      213: 1996562381868996515
+    second: Boat_Idle_30
+  - first:
+      213: 595878221671252258
+    second: Boat_Idle_31
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -853,12 +925,36 @@ TextureImporter:
     nameFileIdTable:
       Boat_Idle_0: 6161816635491882707
       Boat_Idle_1: 5587901902507797589
+      Boat_Idle_10: -3547396288015076898
+      Boat_Idle_11: -7247449387605456708
+      Boat_Idle_12: 4402510375628040379
+      Boat_Idle_13: -2289544782470736487
+      Boat_Idle_14: -4151748312392957543
+      Boat_Idle_15: 1409060792504754377
+      Boat_Idle_16: 1974090480238873110
+      Boat_Idle_17: 9046063816981014853
+      Boat_Idle_18: 8373007730682731621
+      Boat_Idle_19: -6659054194220710536
       Boat_Idle_2: 5386769243147980573
+      Boat_Idle_20: 4887726276583268955
+      Boat_Idle_21: -8942628761697340931
+      Boat_Idle_22: 4997084191622657167
+      Boat_Idle_23: 2781536751819389495
+      Boat_Idle_24: 5154917581124348552
+      Boat_Idle_25: -3482197652663110358
+      Boat_Idle_26: -962024618335019262
+      Boat_Idle_27: -5151045836208967112
+      Boat_Idle_28: 114561295040324998
+      Boat_Idle_29: 8499750460068527976
       Boat_Idle_3: -913276284504280237
+      Boat_Idle_30: 1996562381868996515
+      Boat_Idle_31: 595878221671252258
       Boat_Idle_4: -1543534895457406598
       Boat_Idle_5: 4648445442389332319
       Boat_Idle_6: -4543072844462588810
       Boat_Idle_7: 726911693686558231
+      Boat_Idle_8: -7762335449730396998
+      Boat_Idle_9: 4154621352062557506
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

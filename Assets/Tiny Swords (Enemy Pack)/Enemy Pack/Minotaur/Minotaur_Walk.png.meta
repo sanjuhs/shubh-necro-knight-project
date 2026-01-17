@@ -26,6 +26,78 @@ TextureImporter:
   - first:
       213: -723742200156331293
     second: Minotaur_Walk_7
+  - first:
+      213: -6603048648762501359
+    second: Minotaur_Walk_8
+  - first:
+      213: 2201911248451556677
+    second: Minotaur_Walk_9
+  - first:
+      213: -5625618103389120292
+    second: Minotaur_Walk_10
+  - first:
+      213: 7353018714711567229
+    second: Minotaur_Walk_11
+  - first:
+      213: 6390156613700124070
+    second: Minotaur_Walk_12
+  - first:
+      213: 8240675784689724746
+    second: Minotaur_Walk_13
+  - first:
+      213: 5616675880795453998
+    second: Minotaur_Walk_14
+  - first:
+      213: -2355955689335901589
+    second: Minotaur_Walk_15
+  - first:
+      213: 2280304385139048765
+    second: Minotaur_Walk_16
+  - first:
+      213: 1035161954391324888
+    second: Minotaur_Walk_17
+  - first:
+      213: 2315338784201873950
+    second: Minotaur_Walk_18
+  - first:
+      213: -6558171297177365870
+    second: Minotaur_Walk_19
+  - first:
+      213: 3273612043209046925
+    second: Minotaur_Walk_20
+  - first:
+      213: -4400525032450457676
+    second: Minotaur_Walk_21
+  - first:
+      213: 5909664224991059049
+    second: Minotaur_Walk_22
+  - first:
+      213: 7509527213176979116
+    second: Minotaur_Walk_23
+  - first:
+      213: -5506973658049320497
+    second: Minotaur_Walk_24
+  - first:
+      213: 2461937087238612054
+    second: Minotaur_Walk_25
+  - first:
+      213: 4486245186873960752
+    second: Minotaur_Walk_26
+  - first:
+      213: -1384282965776645066
+    second: Minotaur_Walk_27
+  - first:
+      213: -1982111248715426047
+    second: Minotaur_Walk_28
+  - first:
+      213: -592904473483907987
+    second: Minotaur_Walk_29
+  - first:
+      213: 7540338537112472258
+    second: Minotaur_Walk_30
+  - first:
+      213: 1960570534051262104
+    second: Minotaur_Walk_31
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -853,12 +925,36 @@ TextureImporter:
     nameFileIdTable:
       Minotaur_Walk_0: 5983938953169559524
       Minotaur_Walk_1: -1865337128288994700
+      Minotaur_Walk_10: -5625618103389120292
+      Minotaur_Walk_11: 7353018714711567229
+      Minotaur_Walk_12: 6390156613700124070
+      Minotaur_Walk_13: 8240675784689724746
+      Minotaur_Walk_14: 5616675880795453998
+      Minotaur_Walk_15: -2355955689335901589
+      Minotaur_Walk_16: 2280304385139048765
+      Minotaur_Walk_17: 1035161954391324888
+      Minotaur_Walk_18: 2315338784201873950
+      Minotaur_Walk_19: -6558171297177365870
       Minotaur_Walk_2: 3994187499637837032
+      Minotaur_Walk_20: 3273612043209046925
+      Minotaur_Walk_21: -4400525032450457676
+      Minotaur_Walk_22: 5909664224991059049
+      Minotaur_Walk_23: 7509527213176979116
+      Minotaur_Walk_24: -5506973658049320497
+      Minotaur_Walk_25: 2461937087238612054
+      Minotaur_Walk_26: 4486245186873960752
+      Minotaur_Walk_27: -1384282965776645066
+      Minotaur_Walk_28: -1982111248715426047
+      Minotaur_Walk_29: -592904473483907987
       Minotaur_Walk_3: -6810120822100623639
+      Minotaur_Walk_30: 7540338537112472258
+      Minotaur_Walk_31: 1960570534051262104
       Minotaur_Walk_4: -1236119554121787707
       Minotaur_Walk_5: 3304115312086773058
       Minotaur_Walk_6: -6476088961041308456
       Minotaur_Walk_7: -723742200156331293
+      Minotaur_Walk_8: -6603048648762501359
+      Minotaur_Walk_9: 2201911248451556677
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

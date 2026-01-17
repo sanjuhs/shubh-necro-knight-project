@@ -23,6 +23,33 @@ TextureImporter:
   - first:
       213: -1919939128155651028
     second: Turtle_Walk_6
+  - first:
+      213: -4975111643698103842
+    second: Turtle_Walk_7
+  - first:
+      213: 8814372861018321878
+    second: Turtle_Walk_8
+  - first:
+      213: -8802303219689479641
+    second: Turtle_Walk_9
+  - first:
+      213: -4912620038393576595
+    second: Turtle_Walk_10
+  - first:
+      213: -1842027375615676206
+    second: Turtle_Walk_11
+  - first:
+      213: -8675591125923663117
+    second: Turtle_Walk_12
+  - first:
+      213: 6287921354207822059
+    second: Turtle_Walk_13
+  - first:
+      213: 7814151110592656670
+    second: Turtle_Walk_14
+  - first:
+      213: 2660362413144860554
+    second: Turtle_Walk_15
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -498,11 +525,20 @@ TextureImporter:
     nameFileIdTable:
       Turtle_Walk_0: 1045174187675160317
       Turtle_Walk_1: 7372856299926882778
+      Turtle_Walk_10: -4912620038393576595
+      Turtle_Walk_11: -1842027375615676206
+      Turtle_Walk_12: -8675591125923663117
+      Turtle_Walk_13: 6287921354207822059
+      Turtle_Walk_14: 7814151110592656670
+      Turtle_Walk_15: 2660362413144860554
       Turtle_Walk_2: 4123599452306132901
       Turtle_Walk_3: 121776693467427713
       Turtle_Walk_4: -7564814631860592599
       Turtle_Walk_5: 6566697209257710286
       Turtle_Walk_6: -1919939128155651028
+      Turtle_Walk_7: -4975111643698103842
+      Turtle_Walk_8: 8814372861018321878
+      Turtle_Walk_9: -8802303219689479641
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

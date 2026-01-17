@@ -86,6 +86,18 @@ TextureImporter:
   - first:
       213: 2014065801972455103
     second: Panda_Attack_27
+  - first:
+      213: 7645325573622568778
+    second: Panda_Attack_28
+  - first:
+      213: 6127883197229755363
+    second: Panda_Attack_29
+  - first:
+      213: -1325129113638239464
+    second: Panda_Attack_30
+  - first:
+      213: -6890266594525109892
+    second: Panda_Attack_31
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -932,7 +944,11 @@ TextureImporter:
       Panda_Attack_25: -6955389080790873400
       Panda_Attack_26: 3591495341545289606
       Panda_Attack_27: 2014065801972455103
+      Panda_Attack_28: 7645325573622568778
+      Panda_Attack_29: 6127883197229755363
       Panda_Attack_3: 3170853755713148873
+      Panda_Attack_30: -1325129113638239464
+      Panda_Attack_31: -6890266594525109892
       Panda_Attack_4: -3497400840786891600
       Panda_Attack_5: 5863409225404250627
       Panda_Attack_6: 5283403763830970972

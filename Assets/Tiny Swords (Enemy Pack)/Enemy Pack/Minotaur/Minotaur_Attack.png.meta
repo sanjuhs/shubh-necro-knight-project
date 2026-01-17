@@ -71,6 +71,81 @@ TextureImporter:
   - first:
       213: -6043673938841338716
     second: Minotaur_Attack_22
+  - first:
+      213: -3321166111423600115
+    second: Minotaur_Attack_23
+  - first:
+      213: -7370473027253870051
+    second: Minotaur_Attack_24
+  - first:
+      213: -4011564156016791981
+    second: Minotaur_Attack_25
+  - first:
+      213: 3459588265330570075
+    second: Minotaur_Attack_26
+  - first:
+      213: -1585481906357236120
+    second: Minotaur_Attack_27
+  - first:
+      213: 7977501461920889481
+    second: Minotaur_Attack_28
+  - first:
+      213: -7736838668780089052
+    second: Minotaur_Attack_29
+  - first:
+      213: -1668266185369775336
+    second: Minotaur_Attack_30
+  - first:
+      213: -6548423757180592438
+    second: Minotaur_Attack_31
+  - first:
+      213: 8784172994280500812
+    second: Minotaur_Attack_32
+  - first:
+      213: 6720691038590539542
+    second: Minotaur_Attack_33
+  - first:
+      213: 4856018156302618237
+    second: Minotaur_Attack_34
+  - first:
+      213: 9124487068460927530
+    second: Minotaur_Attack_35
+  - first:
+      213: 5631103046343960351
+    second: Minotaur_Attack_36
+  - first:
+      213: -7728585999150048090
+    second: Minotaur_Attack_37
+  - first:
+      213: 4084594152904703181
+    second: Minotaur_Attack_38
+  - first:
+      213: 6662513465227755893
+    second: Minotaur_Attack_39
+  - first:
+      213: 8197382470732009426
+    second: Minotaur_Attack_40
+  - first:
+      213: 8658487738486785359
+    second: Minotaur_Attack_41
+  - first:
+      213: -8355264913403060431
+    second: Minotaur_Attack_42
+  - first:
+      213: 6279254849031887042
+    second: Minotaur_Attack_43
+  - first:
+      213: -8577013827857215174
+    second: Minotaur_Attack_44
+  - first:
+      213: -5465080869619766571
+    second: Minotaur_Attack_45
+  - first:
+      213: 8678039346641272118
+    second: Minotaur_Attack_46
+  - first:
+      213: 4731708246854063377
+    second: Minotaur_Attack_47
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -1264,8 +1339,33 @@ TextureImporter:
       Minotaur_Attack_20: -6559118060019264525
       Minotaur_Attack_21: 6451547977299981285
       Minotaur_Attack_22: -6043673938841338716
+      Minotaur_Attack_23: -3321166111423600115
+      Minotaur_Attack_24: -7370473027253870051
+      Minotaur_Attack_25: -4011564156016791981
+      Minotaur_Attack_26: 3459588265330570075
+      Minotaur_Attack_27: -1585481906357236120
+      Minotaur_Attack_28: 7977501461920889481
+      Minotaur_Attack_29: -7736838668780089052
       Minotaur_Attack_3: 5587139985805045285
+      Minotaur_Attack_30: -1668266185369775336
+      Minotaur_Attack_31: -6548423757180592438
+      Minotaur_Attack_32: 8784172994280500812
+      Minotaur_Attack_33: 6720691038590539542
+      Minotaur_Attack_34: 4856018156302618237
+      Minotaur_Attack_35: 9124487068460927530
+      Minotaur_Attack_36: 5631103046343960351
+      Minotaur_Attack_37: -7728585999150048090
+      Minotaur_Attack_38: 4084594152904703181
+      Minotaur_Attack_39: 6662513465227755893
       Minotaur_Attack_4: -3720403400318764825
+      Minotaur_Attack_40: 8197382470732009426
+      Minotaur_Attack_41: 8658487738486785359
+      Minotaur_Attack_42: -8355264913403060431
+      Minotaur_Attack_43: 6279254849031887042
+      Minotaur_Attack_44: -8577013827857215174
+      Minotaur_Attack_45: -5465080869619766571
+      Minotaur_Attack_46: 8678039346641272118
+      Minotaur_Attack_47: 4731708246854063377
       Minotaur_Attack_5: 5764427361167915564
       Minotaur_Attack_6: -8861686060935859179
       Minotaur_Attack_7: -1556127151124700168

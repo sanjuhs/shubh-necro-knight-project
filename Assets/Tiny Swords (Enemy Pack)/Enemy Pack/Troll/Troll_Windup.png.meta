@@ -17,6 +17,51 @@ TextureImporter:
   - first:
       213: 5846371092992265555
     second: Troll_Windup_4
+  - first:
+      213: 6851039108231566276
+    second: Troll_Windup_5
+  - first:
+      213: 1012682316791806748
+    second: Troll_Windup_6
+  - first:
+      213: -6355057994225604445
+    second: Troll_Windup_7
+  - first:
+      213: 6013532680096058689
+    second: Troll_Windup_8
+  - first:
+      213: 7942511221185958459
+    second: Troll_Windup_9
+  - first:
+      213: 8671817216809035885
+    second: Troll_Windup_10
+  - first:
+      213: 7926348745193245714
+    second: Troll_Windup_11
+  - first:
+      213: -3631344661025548723
+    second: Troll_Windup_12
+  - first:
+      213: -9166431332923666192
+    second: Troll_Windup_13
+  - first:
+      213: 4113005978404297461
+    second: Troll_Windup_14
+  - first:
+      213: -2047279363532123213
+    second: Troll_Windup_15
+  - first:
+      213: -8593160427088129071
+    second: Troll_Windup_16
+  - first:
+      213: 5743149493774473349
+    second: Troll_Windup_17
+  - first:
+      213: 8640900792643048554
+    second: Troll_Windup_18
+  - first:
+      213: 7526764074320193929
+    second: Troll_Windup_19
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -580,9 +625,24 @@ TextureImporter:
     nameFileIdTable:
       Troll_Windup_0: -6167839292905373428
       Troll_Windup_1: 6816997843693973687
+      Troll_Windup_10: 8671817216809035885
+      Troll_Windup_11: 7926348745193245714
+      Troll_Windup_12: -3631344661025548723
+      Troll_Windup_13: -9166431332923666192
+      Troll_Windup_14: 4113005978404297461
+      Troll_Windup_15: -2047279363532123213
+      Troll_Windup_16: -8593160427088129071
+      Troll_Windup_17: 5743149493774473349
+      Troll_Windup_18: 8640900792643048554
+      Troll_Windup_19: 7526764074320193929
       Troll_Windup_2: -8589404799884237120
       Troll_Windup_3: 5284046830386569634
       Troll_Windup_4: 5846371092992265555
+      Troll_Windup_5: 6851039108231566276
+      Troll_Windup_6: 1012682316791806748
+      Troll_Windup_7: -6355057994225604445
+      Troll_Windup_8: 6013532680096058689
+      Troll_Windup_9: 7942511221185958459
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

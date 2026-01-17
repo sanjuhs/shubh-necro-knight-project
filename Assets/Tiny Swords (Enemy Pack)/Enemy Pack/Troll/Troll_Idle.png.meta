@@ -38,6 +38,114 @@ TextureImporter:
   - first:
       213: -2895938610546318192
     second: Troll_Idle_11
+  - first:
+      213: 4702189047570027440
+    second: Troll_Idle_12
+  - first:
+      213: 5543736322285132905
+    second: Troll_Idle_13
+  - first:
+      213: 8051686520558965684
+    second: Troll_Idle_14
+  - first:
+      213: -4270217437979092640
+    second: Troll_Idle_15
+  - first:
+      213: 1269227585616636528
+    second: Troll_Idle_16
+  - first:
+      213: -4355006230215843113
+    second: Troll_Idle_17
+  - first:
+      213: -7936403250997718430
+    second: Troll_Idle_18
+  - first:
+      213: -6782510892990991570
+    second: Troll_Idle_19
+  - first:
+      213: -4689227997034483794
+    second: Troll_Idle_20
+  - first:
+      213: -4604056072169527021
+    second: Troll_Idle_21
+  - first:
+      213: 1405276984748192632
+    second: Troll_Idle_22
+  - first:
+      213: 2677743227180905987
+    second: Troll_Idle_23
+  - first:
+      213: 488078944293601920
+    second: Troll_Idle_24
+  - first:
+      213: -6548219991198348016
+    second: Troll_Idle_25
+  - first:
+      213: -5516718109323154914
+    second: Troll_Idle_26
+  - first:
+      213: -8348880329245165790
+    second: Troll_Idle_27
+  - first:
+      213: -4841869956307454610
+    second: Troll_Idle_28
+  - first:
+      213: -2452844402010275950
+    second: Troll_Idle_29
+  - first:
+      213: 2132762054518482248
+    second: Troll_Idle_30
+  - first:
+      213: 6049721101517103329
+    second: Troll_Idle_31
+  - first:
+      213: -2605988051060379975
+    second: Troll_Idle_32
+  - first:
+      213: 6747031218726109383
+    second: Troll_Idle_33
+  - first:
+      213: 133902026198656294
+    second: Troll_Idle_34
+  - first:
+      213: 3229110973943330245
+    second: Troll_Idle_35
+  - first:
+      213: 3271774311054906810
+    second: Troll_Idle_36
+  - first:
+      213: 87893412769335030
+    second: Troll_Idle_37
+  - first:
+      213: 1295709615568508154
+    second: Troll_Idle_38
+  - first:
+      213: -2839085863668474196
+    second: Troll_Idle_39
+  - first:
+      213: -7649762826746922933
+    second: Troll_Idle_40
+  - first:
+      213: 4769951297778202180
+    second: Troll_Idle_41
+  - first:
+      213: -3584327376696164579
+    second: Troll_Idle_42
+  - first:
+      213: 167757658717610557
+    second: Troll_Idle_43
+  - first:
+      213: 1209440773500478059
+    second: Troll_Idle_44
+  - first:
+      213: 5037494230004809329
+    second: Troll_Idle_45
+  - first:
+      213: 3912185585297438564
+    second: Troll_Idle_46
+  - first:
+      213: -1341894034267953782
+    second: Troll_Idle_47
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -1219,9 +1327,45 @@ TextureImporter:
       Troll_Idle_1: -7120503069529902813
       Troll_Idle_10: -4256768827469389766
       Troll_Idle_11: -2895938610546318192
+      Troll_Idle_12: 4702189047570027440
+      Troll_Idle_13: 5543736322285132905
+      Troll_Idle_14: 8051686520558965684
+      Troll_Idle_15: -4270217437979092640
+      Troll_Idle_16: 1269227585616636528
+      Troll_Idle_17: -4355006230215843113
+      Troll_Idle_18: -7936403250997718430
+      Troll_Idle_19: -6782510892990991570
       Troll_Idle_2: 832755368069413675
+      Troll_Idle_20: -4689227997034483794
+      Troll_Idle_21: -4604056072169527021
+      Troll_Idle_22: 1405276984748192632
+      Troll_Idle_23: 2677743227180905987
+      Troll_Idle_24: 488078944293601920
+      Troll_Idle_25: -6548219991198348016
+      Troll_Idle_26: -5516718109323154914
+      Troll_Idle_27: -8348880329245165790
+      Troll_Idle_28: -4841869956307454610
+      Troll_Idle_29: -2452844402010275950
       Troll_Idle_3: 1992930591366835740
+      Troll_Idle_30: 2132762054518482248
+      Troll_Idle_31: 6049721101517103329
+      Troll_Idle_32: -2605988051060379975
+      Troll_Idle_33: 6747031218726109383
+      Troll_Idle_34: 133902026198656294
+      Troll_Idle_35: 3229110973943330245
+      Troll_Idle_36: 3271774311054906810
+      Troll_Idle_37: 87893412769335030
+      Troll_Idle_38: 1295709615568508154
+      Troll_Idle_39: -2839085863668474196
       Troll_Idle_4: 2486878655888700704
+      Troll_Idle_40: -7649762826746922933
+      Troll_Idle_41: 4769951297778202180
+      Troll_Idle_42: -3584327376696164579
+      Troll_Idle_43: 167757658717610557
+      Troll_Idle_44: 1209440773500478059
+      Troll_Idle_45: 5037494230004809329
+      Troll_Idle_46: 3912185585297438564
+      Troll_Idle_47: -1341894034267953782
       Troll_Idle_5: 4407211109832310593
       Troll_Idle_6: 5939203971004893745
       Troll_Idle_7: 5333468026539246018

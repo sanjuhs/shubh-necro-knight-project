@@ -56,6 +56,48 @@ TextureImporter:
   - first:
       213: -5082475918560168563
     second: Bear_Attack_17
+  - first:
+      213: -8316135357673579468
+    second: Bear_Attack_18
+  - first:
+      213: 2417781091557239408
+    second: Bear_Attack_19
+  - first:
+      213: 5271158080993669631
+    second: Bear_Attack_20
+  - first:
+      213: -6642084054398469696
+    second: Bear_Attack_21
+  - first:
+      213: -3288075525966605161
+    second: Bear_Attack_22
+  - first:
+      213: 3940801760870722833
+    second: Bear_Attack_23
+  - first:
+      213: -4647283143631362945
+    second: Bear_Attack_24
+  - first:
+      213: -4076458099244588871
+    second: Bear_Attack_25
+  - first:
+      213: 7662497642343325770
+    second: Bear_Attack_26
+  - first:
+      213: 6393450561118106951
+    second: Bear_Attack_27
+  - first:
+      213: -6951332552089841688
+    second: Bear_Attack_28
+  - first:
+      213: -8307588157966621127
+    second: Bear_Attack_29
+  - first:
+      213: -8899536403000998073
+    second: Bear_Attack_30
+  - first:
+      213: 3078968525286203550
+    second: Bear_Attack_31
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -891,8 +933,22 @@ TextureImporter:
       Bear_Attack_15: -7025009248204488500
       Bear_Attack_16: 2391858134441400050
       Bear_Attack_17: -5082475918560168563
+      Bear_Attack_18: -8316135357673579468
+      Bear_Attack_19: 2417781091557239408
       Bear_Attack_2: 8475008236743639273
+      Bear_Attack_20: 5271158080993669631
+      Bear_Attack_21: -6642084054398469696
+      Bear_Attack_22: -3288075525966605161
+      Bear_Attack_23: 3940801760870722833
+      Bear_Attack_24: -4647283143631362945
+      Bear_Attack_25: -4076458099244588871
+      Bear_Attack_26: 7662497642343325770
+      Bear_Attack_27: 6393450561118106951
+      Bear_Attack_28: -6951332552089841688
+      Bear_Attack_29: -8307588157966621127
       Bear_Attack_3: 895329416020127910
+      Bear_Attack_30: -8899536403000998073
+      Bear_Attack_31: 3078968525286203550
       Bear_Attack_4: 1804751173891814793
       Bear_Attack_5: -7951214152837274951
       Bear_Attack_6: 4459342991175242049

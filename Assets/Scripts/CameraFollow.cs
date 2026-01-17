@@ -26,6 +26,9 @@ public class CameraFollow : MonoBehaviour
     [Tooltip("Enable camera boundaries")]
     [SerializeField] private bool useBoundaries = true;
     
+    [Tooltip("Enable camera following (can be disabled to lock camera in place)")]
+    [SerializeField] private bool enableFollowing = true;
+    
     [Tooltip("Minimum X position the camera can reach")]
     [SerializeField] private float minX = -10f;
     
@@ -95,7 +98,7 @@ public class CameraFollow : MonoBehaviour
     
     private void LateUpdate()
     {
-        if (target == null) return;
+        if (target == null || !enableFollowing) return;
         
         // Recalculate bounds if camera size changes (e.g., zoom)
         if (cam != null && cam.orthographic)
@@ -146,6 +149,30 @@ public class CameraFollow : MonoBehaviour
         maxX = newMaxX;
         minY = newMinY;
         maxY = newMaxY;
+    }
+    
+    /// <summary>
+    /// Enables or disables camera boundaries.
+    /// </summary>
+    public void SetUseBoundaries(bool enabled)
+    {
+        useBoundaries = enabled;
+    }
+    
+    /// <summary>
+    /// Centers the camera at a specific position (ignoring target and boundaries).
+    /// </summary>
+    public void CenterAtPosition(Vector3 position)
+    {
+        transform.position = new Vector3(position.x, position.y, transform.position.z);
+    }
+    
+    /// <summary>
+    /// Enables or disables camera following.
+    /// </summary>
+    public void SetEnableFollowing(bool enabled)
+    {
+        enableFollowing = enabled;
     }
     
     /// <summary>
