@@ -4,9 +4,14 @@ using UnityEngine;
 /// Smooth camera follow script with boundary clamping.
 /// The camera follows the player smoothly and stops at map edges
 /// to prevent showing areas beyond the playable map.
+/// Automatically syncs boundaries from WorldGenerator if available.
 /// </summary>
 public class CameraFollow : MonoBehaviour
 {
+    [Header("World Reference")]
+    [Tooltip("The WorldGenerator to sync bounds from. If not set, will auto-find.")]
+    [SerializeField] private WorldGenerator worldGenerator;
+    
     [Header("Target Settings")]
     [Tooltip("The target to follow (usually the player)")]
     [SerializeField] private Transform target;
@@ -29,16 +34,16 @@ public class CameraFollow : MonoBehaviour
     [Tooltip("Enable camera following (can be disabled to lock camera in place)")]
     [SerializeField] private bool enableFollowing = true;
     
-    [Tooltip("Minimum X position the camera can reach")]
+    [Tooltip("Minimum X position the camera can reach (overridden by WorldGenerator if present)")]
     [SerializeField] private float minX = -10f;
     
-    [Tooltip("Maximum X position the camera can reach")]
+    [Tooltip("Maximum X position the camera can reach (overridden by WorldGenerator if present)")]
     [SerializeField] private float maxX = 10f;
     
-    [Tooltip("Minimum Y position the camera can reach")]
+    [Tooltip("Minimum Y position the camera can reach (overridden by WorldGenerator if present)")]
     [SerializeField] private float minY = -10f;
     
-    [Tooltip("Maximum Y position the camera can reach")]
+    [Tooltip("Maximum Y position the camera can reach (overridden by WorldGenerator if present)")]
     [SerializeField] private float maxY = 10f;
     
     [Header("Debug")]
@@ -57,6 +62,22 @@ public class CameraFollow : MonoBehaviour
     {
         // Cache camera reference
         cam = GetComponent<Camera>();
+        
+        // Auto-find WorldGenerator if not assigned
+        if (worldGenerator == null)
+        {
+            worldGenerator = FindFirstObjectByType<WorldGenerator>();
+            if (worldGenerator != null)
+            {
+                Debug.Log("[CameraFollow] Auto-found WorldGenerator, syncing bounds");
+                SyncBoundsFromWorldGenerator();
+            }
+        }
+        else
+        {
+            // If explicitly assigned, sync from it
+            SyncBoundsFromWorldGenerator();
+        }
         
         // Auto-find player if not assigned
         if (target == null)
@@ -85,6 +106,17 @@ public class CameraFollow : MonoBehaviour
         
         // Calculate camera bounds based on orthographic size
         CalculateCameraBounds();
+    }
+    
+    /// <summary>
+    /// Syncs camera boundaries from the WorldGenerator.
+    /// </summary>
+    private void SyncBoundsFromWorldGenerator()
+    {
+        if (worldGenerator == null) return;
+        
+        worldGenerator.GetBoundaryCoordinates(out minX, out maxX, out minY, out maxY);
+        Debug.Log($"[CameraFollow] Synced bounds from WorldGenerator: X({minX:F1} to {maxX:F1}), Y({minY:F1} to {maxY:F1})");
     }
     
     private void CalculateCameraBounds()
@@ -127,14 +159,53 @@ public class CameraFollow : MonoBehaviour
     /// <summary>
     /// Clamps the camera position to stay within the defined boundaries,
     /// accounting for the camera's viewport size.
+    /// Ensures camera never goes outside the bounds.
     /// </summary>
     private Vector3 ClampToBoundaries(Vector3 position)
     {
-        // Clamp X position (accounting for camera width)
-        float clampedX = Mathf.Clamp(position.x, minX + camHalfWidth, maxX - camHalfWidth);
+        // Calculate the camera viewport half dimensions
+        float halfHeight = camHalfHeight;
+        float halfWidth = camHalfWidth;
         
-        // Clamp Y position (accounting for camera height)
-        float clampedY = Mathf.Clamp(position.y, minY + camHalfHeight, maxY - camHalfHeight);
+        // Clamp X position (ensuring camera viewport stays within bounds)
+        // Camera center must stay between (minX + halfWidth) and (maxX - halfWidth)
+        // But if camera is larger than world, just clamp to the center of bounds
+        float clampedX = position.x;
+        if (maxX - minX > 0)
+        {
+            float boundsCenter = (minX + maxX) / 2f;
+            float boundsHalfWidth = (maxX - minX) / 2f;
+            
+            if (boundsHalfWidth >= halfWidth)
+            {
+                // World is larger than camera - use normal clamping
+                clampedX = Mathf.Clamp(position.x, minX + halfWidth, maxX - halfWidth);
+            }
+            else
+            {
+                // World is smaller than camera - center the view on the world
+                clampedX = boundsCenter;
+            }
+        }
+        
+        // Clamp Y position (ensuring camera viewport stays within bounds)
+        float clampedY = position.y;
+        if (maxY - minY > 0)
+        {
+            float boundsCenter = (minY + maxY) / 2f;
+            float boundsHalfHeight = (maxY - minY) / 2f;
+            
+            if (boundsHalfHeight >= halfHeight)
+            {
+                // World is larger than camera - use normal clamping
+                clampedY = Mathf.Clamp(position.y, minY + halfHeight, maxY - halfHeight);
+            }
+            else
+            {
+                // World is smaller than camera - center the view on the world
+                clampedY = boundsCenter;
+            }
+        }
         
         // Keep the Z position (camera depth)
         return new Vector3(clampedX, clampedY, position.z);

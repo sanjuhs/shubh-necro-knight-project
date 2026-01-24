@@ -14,6 +14,7 @@ public class WorldGenerator : MonoBehaviour
     [SerializeField] private float worldHeight = 15f;
     
     [Header("Tile Settings")]
+    [SerializeField] private RuleTile ruleTile;
     [SerializeField] private Tile tilePrefab;
     
     [Header("Editor Settings")]
@@ -83,17 +84,34 @@ public class WorldGenerator : MonoBehaviour
         
         if (tilemap == null) return;
         
+        if (ruleTile == null)
+        {
+            Debug.LogWarning("[WorldGenerator] No RuleTile assigned. Please assign a RuleTile in the inspector.");
+            return;
+        }
+        
         // Clear existing tiles
         tilemap.ClearAllTiles();
         
         // Calculate grid dimensions based on world size
-        // Assuming 1 unit = 1 tile in the grid
         int gridWidth = Mathf.RoundToInt(worldWidth);
         int gridHeight = Mathf.RoundToInt(worldHeight);
         
-        // The tilemap grid is now sized according to worldWidth and worldHeight
-        // You can place tiles here based on your game logic
-        // For now, the tilemap is ready to be used with the specified dimensions
+        // Calculate starting position (centered)
+        int startX = -gridWidth / 2;
+        int startY = -gridHeight / 2;
+        
+        // Fill the tilemap with the rule tile
+        for (int x = 0; x < gridWidth; x++)
+        {
+            for (int y = 0; y < gridHeight; y++)
+            {
+                Vector3Int tilePos = new Vector3Int(startX + x, startY + y, 0);
+                tilemap.SetTile(tilePos, ruleTile);
+            }
+        }
+        
+        Debug.Log($"[WorldGenerator] Filled world with {gridWidth}x{gridHeight} tiles using RuleTile: {ruleTile.name}");
     }
 
     /// <summary>

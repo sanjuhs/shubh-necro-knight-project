@@ -128,15 +128,16 @@ public class MyGameScript : MonoBehaviour
 
 ## File Location
 - **Script:** `Assets/Scripts/WorldGenerator.cs`
-- **Old Script (Remove):** `Assets/Scripts/CheckerboardBackground.cs` (if still present)
 
 ## Migration Notes
-If you were using the old `CheckerboardBackground` script:
-1. Delete or backup the old CheckerboardBackground.cs file
-2. Replace the component reference with WorldGenerator on affected GameObjects
-3. Add a Tilemap component if not already present
-4. Delete the SpriteRenderer component from the GameObject
-5. Reconfigure the world size settings as needed
+If you were previously using the old `CheckerboardBackground` script:
+1. The `CheckerboardBackground.cs` file has been removed
+2. Replace it with `WorldGenerator` on your GameObject
+3. Add a Tilemap component if not already present (WorldGenerator requires it)
+4. Delete any SpriteRenderer components (if you had them)
+5. Assign a RuleTile to the WorldGenerator's "Rule Tile" field
+6. Reconfigure the world size settings as needed
+7. Use WorldGenerator for all world boundary and size related operations
 
 ## Next Steps
 - Implement tile placement logic in the `GenerateWorld()` method

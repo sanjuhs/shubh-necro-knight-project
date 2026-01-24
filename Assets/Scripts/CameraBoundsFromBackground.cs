@@ -184,55 +184,15 @@ public class CameraBoundsFromBackground : MonoBehaviour
         minY += boundaryPadding;
         maxY -= boundaryPadding;
         
-        // Calculate background size
-        float backgroundWidth = maxX - minX;
-        float backgroundHeight = maxY - minY;
+        // Always enable boundaries when syncing from WorldGenerator
+        cameraFollow.SetUseBoundaries(true);
+        cameraFollow.SetEnableFollowing(true);
+        cameraFollow.SetBoundaries(minX, maxX, minY, maxY);
         
-        // Calculate camera size
-        float cameraWidth = 0f;
-        float cameraHeight = 0f;
-        
-        if (cam != null && cam.orthographic)
+        if (debugLog && !continuousSync)
         {
-            cameraHeight = cam.orthographicSize * 2f;
-            cameraWidth = cameraHeight * cam.aspect;
-        }
-        else
-        {
-            // If camera is not orthographic, we can't determine size, so use normal behavior
-            cameraFollow.SetBoundaries(minX, maxX, minY, maxY);
-            return;
-        }
-        
-        // Check if background is smaller than camera on any axis
-        if (backgroundWidth < cameraWidth || backgroundHeight < cameraHeight)
-        {
-            // Background is smaller than camera - center camera and disable movement
-            float centerX = (minX + maxX) / 2f;
-            float centerY = (minY + maxY) / 2f;
-            Vector3 centerPosition = new Vector3(centerX, centerY, transform.position.z);
-            
-            // Disable boundaries and following to stop camera movement
-            cameraFollow.SetUseBoundaries(false);
-            cameraFollow.SetEnableFollowing(false);
-            
-            // Center the camera at the background center
-            cameraFollow.CenterAtPosition(centerPosition);
-            
-            if (debugLog && !continuousSync)
-            {
-                Debug.Log($"[CameraBoundsFromBackground] Background is smaller than camera. " +
-                         $"Background: {backgroundWidth:F1}x{backgroundHeight:F1}, " +
-                         $"Camera: {cameraWidth:F1}x{cameraHeight:F1}. " +
-                         $"Camera centered at ({centerX:F1}, {centerY:F1})");
-            }
-        }
-        else
-        {
-            // Background is larger than camera - use normal boundary behavior
-            cameraFollow.SetUseBoundaries(true);
-            cameraFollow.SetEnableFollowing(true);
-            cameraFollow.SetBoundaries(minX, maxX, minY, maxY);
+            Debug.Log($"[CameraBoundsFromBackground] Applied world boundaries: " +
+                     $"X({minX:F1} to {maxX:F1}), Y({minY:F1} to {maxY:F1})");
         }
     }
     
@@ -256,3 +216,4 @@ public class CameraBoundsFromBackground : MonoBehaviour
         SyncBounds();
     }
 }
+
